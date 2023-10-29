@@ -21,6 +21,13 @@ import Product from '../product/Product'
 import Auth from '../pages/Auth'
 import Login from '../components/Login'
 import Register from '../components/Register'
+import ProductPage from "../pages/ProductPage"
+import EventsPage from "../pages/EventsPage"
+import SupportPage from "../pages/SupportPage"
+import EducationPage from "../pages/EducationPage"
+import BusinessPage from "../pages/BusinessPage"
+import SearchPage from "../pages/SearchPage"
+
 export const router = createBrowserRouter([
   {
     element: <Layout />,
@@ -115,7 +122,27 @@ export const router = createBrowserRouter([
           {
             path:'/register',
             element:<Register/>
-          }
+          },
+          {
+            path:'/products',
+            element:<ProductPage/>
+          },{
+            path:'/business',
+            element:<BusinessPage/>
+          },{
+            path:'/education',
+            element:<EducationPage/>
+          },{
+            path:'/support',
+            element:<SupportPage/>
+          },{
+            path:'/events',
+            element:<EventsPage/>
+          },
+          {
+            path:'/searchpage',
+            element:<SearchPage/>
+          },
        
      
   

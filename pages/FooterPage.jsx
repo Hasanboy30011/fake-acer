@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
     
     <Box  display={{base:"inline",sm:"flex"}} justifyContent={"space-between"} gap={6} mt={100}> 
       
-   <Box>
+   <Box >
     <Text as={"b"}>Products</Text>
     <br />
     <Link>Laptops</Link>

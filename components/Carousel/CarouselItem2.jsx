@@ -1,0 +1,40 @@
+import { Image } from '@chakra-ui/react'
+
+export const items = [
+  <Image
+    width={'100%'}
+    aspectRatio={'16/9'}
+    borderRadius={'12px'}
+    maxH={'600px'}
+    objectFit={'cover'}
+    src='https://static-ecpa.acer.com/media/wysiwyg/acerus_22q2_ecomm_w18_swift_600x400.png'
+    alt=''
+  />,
+  <Image
+    width={'100%'}
+    aspectRatio={'16/9'}
+    borderRadius={'12px'}
+    maxH={'600px'}
+    objectFit={'cover'}
+    src='https://static-ecapac.acer.com/media/wysiwyg/BUsiness_Laptop__5.jpg'
+    alt=''
+  />,
+  <Image
+    width={'100%'}
+    aspectRatio={'16/9'}
+    borderRadius={'12px'}
+    maxH={'600px'}
+    objectFit={'cover'}
+    src='https://images.unsplash.com/photo-1522199794616-8a62b541f762?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGFjZXIlMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D&w=1000&q=80'
+    alt=''
+  />,
+    <Image
+  width={'100%'}
+  aspectRatio={'16/9'}
+  borderRadius={'12px'}
+  maxH={'600px'}
+  objectFit={'cover'}
+  src='https://www.techspot.com/images2/news/bigimage/2021/07/2021-07-01-image-17.jpg'
+  alt=''
+/>,
+]

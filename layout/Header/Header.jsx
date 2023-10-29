@@ -1,14 +1,17 @@
-import { Box, Container, HStack, Heading, Image, Text, Tooltip } from "@chakra-ui/react";
+import { Box, Button, Container, HStack, Heading, Image, Input, InputGroup, InputLeftElement, InputRightElement, Text, Tooltip } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import Filter from "./Filter";
 import { Basket } from "@styled-icons/ionicons-sharp/Basket";
 
 import BurgerMenu from "./BurgerMenu";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { BasketContext } from "../../context/BasketContext";
 import acer from "../../assets/icons/acer.svg"
+import { SearchIcon } from "@chakra-ui/icons";
+import axios from "axios";
 const Header = () => {
-  const { basket } = useContext(BasketContext);
+  const { basket } = useContext(BasketContext)
+
   return (
     <>
     <Container
@@ -27,15 +30,16 @@ const Header = () => {
           </Link>
         </Box>
         <Box display={{base:"none",sm:"none",md:"none",lg:"flex"}} justifyContent={"space-between"} gap={10}>
-          <Link to={"/"}>Products</Link>
-          <Link to={"/"}>Business</Link>
-          <Link to={"/"}>Education</Link>
-          <Link to={"/"}>Support</Link>
-          <Link to={"/"}>Events</Link>
+          <Link to={"/products"}>Products</Link>
+          <Link to={"business"}>Business</Link>
+          <Link to={"/education"}>Education</Link>
+          <Link to={"/support"}>Support</Link>
+          <Link to={"/events"}>Events</Link>
         </Box>
       </Box>
       <Box width={"100%"} display={{ base: "none", sm: "block" }}>
-        <Filter />
+
+   <Link to={"/searchpage"}><Button colorScheme="facebook"> to  Search page</Button></Link>
       </Box>
       <HStack spacing={"20px"}>
       <Link to="/basket" style={{ position: "relative" }}>
